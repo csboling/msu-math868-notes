@@ -57,7 +57,7 @@ k$ is the \emph{codimension} of $S$.
       \mathbb{R}^n$ be the inclusion map
       $(r^1, \dots, r^k) \mapsto (r^1, \dots, r^k, 0, \dots 0)$, and
       $\pi: \mathbb{R}^n \to \mathbb{R}^k$ be the projection map
-      $(r^1, \dots, r^n) mapsto (r^1, \dots, r^k)$. Given
+      $(r^1, \dots, r^n) \mapsto (r^1, \dots, r^k)$. Given
       $(U, \phi) \in \mathcal{U}$, define
       $\phi_S : U \cap S \to \mathbb{R}^k$ by $\phi_S = \pi \circ
       \phi$. We claim that
@@ -377,7 +377,7 @@ the bottom right, which has nonzero determinant.
       &= \frac{1}{2} Y + \frac{1}{2} Y^T \\
       &= Y.
       \end{align*}
-      Therefore $f_{ast, A}$ is surjective, so
+      Therefore $f_{\ast, A}$ is surjective, so
       $\mathcal{O}(n) = f^{-1}(I)$ is a $C^\infty$ manifold of
       dimension
       $$
@@ -432,14 +432,20 @@ the bottom right, which has nonzero determinant.
 In a Lie group, the tangent space at the identity element is called
 the \emph{Lie algebra}.
 
-\begin{tabular}{c | c}
-  $n$ &
-  $\dim \mathcal{O}(n) = \dim \mathrm{SO}(n) = \frac{n(n-1)}{2}$ \\
-  \hline \\
-  1 & 0 ($\mathcal{O}(n) \simeq \mathbb{Z}_2 = \langle x \mapsto -x \rangle$) \\
-  2 & 1 ($\mathrm{SO}(2)$ is $2 \times 2$ rotation matrices) \\
-  3 & 3 ($\mathrm{SO}(3) \simeq \mathbb{R}P^3$)
-\end{tabular}
+The low-dimensional special orthogonal groups are summarized in the
+following table.
+
+\begin{centering}
+  \begin{tabular}{c | c}
+    $n$ &
+    $\dim \mathcal{O}(n) = \dim \mathrm{SO}(n) = \frac{n(n-1)}{2}$ \\
+    \hline \\
+    1 & 0 ($\mathcal{O}(n) \simeq \mathbb{Z}_2 = \langle x \mapsto -x \rangle$) \\
+    2 & 1 ($\mathrm{SO}(2)$ is $2 \times 2$ rotation matrices) \\
+    3 & 3 ($\mathrm{SO}(3) \simeq \mathbb{R}P^3$)
+  \end{tabular}
+\end{centering}
+
 Also observe that $\mathcal{O}(n)$ and $\mathrm{SO}(n)$ are compact,
 since they are closed (as preimages $f^{-1}(I)$ of functions into
 $\mathbb{R}^{n^2}$) and bounded: a matrix in
@@ -476,6 +482,6 @@ rotation because $\det(A\restrict_{L^\perp}) = 1$. Use this rotation
 to put an arrow on $L$ satisfying the right hand rule, and let $v$ be
 a unit vector in that direction. This is only well-defined provided
 the angle of rotation is not an integer multiple of $\pi$. We have
-then defined a map $\mathrm{SO}(3) \to \mathbb{D}^3(pi) / \sim$ given
+then defined a map $\mathrm{SO}(3) \to \mathbb{D}^3(\pi) / \sim$ given
 by
 $A \mapsto \theta v$.

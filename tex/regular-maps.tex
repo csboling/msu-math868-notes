@@ -142,7 +142,7 @@ $\psi F \phi^{-1} = (r^1, \dots, r^k, 0, \dots 0)$. Then
 &= \Set{ u \in U | \psi F(u) = 0 } \\
 &= \Set{ u \in U | r^i \psi F(u) = 0 \forall i = 1, \dots, m } \\
 &= \Set{ u \in U | \phi(u) \text{ has its first $k$ coordinates 0}} \\
-&= { u \in U | (r^i \circ \phi)(u), i=1, \dots, k } \\
+&= \Set{ u \in U | (r^i \circ \phi)(u), i=1, \dots, k } \\
 &= \Set{ u \in U | x^i(u) = 0, i=1, \dots, k }.
 \end{align*}
 \end{proof}
@@ -180,7 +180,7 @@ We are now interested in cases when the image of a smooth map $F: N
     A non-injective immersion is given by
     $F(t) = (t^2 - 1, t^3 - t)$, which has differential
     $$
-      F_{ast, t}
+      F_{\ast, t}
         \left(
           \frac{\dif}{\dif t}
         \right)
@@ -242,16 +242,17 @@ Let $q \in F(N)$. We wish to show that $q$ has an adapted chart.
 Since $F$ is injective, there is a unique $p \in N$ such that
 $F(p) = q$. Let $(U, x^1, \dots, x^n)$ and $(Y, y^1, \dots, y^n)$ be
 immersion charts at $p$ and $F(p) = q$, with $F(U) \subset V$, such that
-$(y^i \circ f)(u) = x^i(u)$, $i = 1, \dots, n$
-and $(y^i \circ f)(u) = 0$ for $i = n+1, \dots, m$.
+$(y^i \circ F)(u) = x^i(u)$, $i = 1, \dots, n$
+and $(y^i \circ F)(u) = 0$ for $i = n+1, \dots, m$.
 
 Since $F$ is a homeomorphism onto its image and $F(N)$ has the
 subspace topology, $F(U)$ is an open set in $F(N)$ since $U$ is open
-in $N$. Therefore there exists some $V^\prime$ open in$M$ such that
+in $N$. Therefore there exists some $V^\prime$ open in $M$ such that
 $F(U) = F(N) \cap V^\prime$. Then $(V^\prime, y^1, \dots, y^m)$ is an
 adapted chart, since in $V^\prime$ we have
 $$
-  V^\prime \\cap F(N)
+  F(U)
+= V^\prime \cap F(N)
 = \Set{ v \in V^\prime | y^i(v) = 0, i = n+1, \dots, m }.
 $$
 \end{proof}
@@ -306,7 +307,8 @@ map $\tilde{F} : N^n \to S^s$ given by $\tilde{F}(n) = F(n)$. This map
 is not smooth in general. For example, $f$ from the previous example
 is smooth with image in $S$, but $\tilde{f} : (-\pi/2, 3\pi/2) \to S$
 is not even continuous because $\tilde{f}^{-1}(AB)$ is not open in
-$(-\pi/2, 3\pi/2)$ but is open in $S$.
+$(-\pi/2, 3\pi/2)$ but $AB$ is open in $S$, where $AB$ is a line segment
+through the origin along the curve.
 
 \begin{prop}
 Let $F : N^n \to M^m$, and $S^s \subset M^m$ be an embedded
@@ -394,7 +396,7 @@ is an embedding.
 \end{prop}
 \begin{proof}
 We need to show that when $F(N)$ is endowed with the subspace topology,
-$F: N \to F(N)$ is a homeomorphism from a from a compact space to a
+$F: N \to F(N)$ is a homeomorphism from a compact space to a
 Hausdorff space and is continuous and bijective and has a continuous
 closed inverse.
 \end{proof}
