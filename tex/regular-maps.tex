@@ -138,13 +138,12 @@ constant rank theorem, so that
 $\psi F \phi^{-1} = (r^1, \dots, r^k, 0, \dots 0)$. Then
 \begin{align*}
    U \cap S
-&= \{ u \in U ~\vert~ F(u) = c \} \\
-&= \{ u \in U ~\vert~ \psi F(u) = 0 \} \\
-&= \{ u \in U ~\vert~ r^i \psi F(u) = 0 \forall i = 1, \dots, m \} \\
-&= \{ u \in U ~\vert~ \phi(u) \text{ has its first $k$ coordinates 0}
-   \} \\
-&= \{ u \in U ~\vert~ (r^i \circ \phi)(u), i=1, \dots, k \} \\
-&= \{ u \in U ~\vert~ x^i(u) = 0, i=1, \dots, k \}.
+&= \Set{ u \in U | F(u) = c } \\
+&= \Set{ u \in U | \psi F(u) = 0 } \\
+&= \Set{ u \in U | r^i \psi F(u) = 0 \forall i = 1, \dots, m } \\
+&= \Set{ u \in U | \phi(u) \text{ has its first $k$ coordinates 0}} \\
+&= { u \in U | (r^i \circ \phi)(u), i=1, \dots, k } \\
+&= \Set{ u \in U | x^i(u) = 0, i=1, \dots, k }.
 \end{align*}
 \end{proof}
 
@@ -253,7 +252,7 @@ $F(U) = F(N) \cap V^\prime$. Then $(V^\prime, y^1, \dots, y^m)$ is an
 adapted chart, since in $V^\prime$ we have
 $$
   V^\prime \\cap F(N)
-= \{ v \in V^\prime ~\vert~ y^i(v) = 0, i = n+1, \dots, m \}.
+= \Set{ v \in V^\prime | y^i(v) = 0, i = n+1, \dots, m }.
 $$
 \end{proof}
 
@@ -269,7 +268,7 @@ submanifold of $M$, there exists a coordinate chart for $M$ centered
 at $n$ adapted for the subset $N$. Then
 $$
   V \cap N
-= \{ v \in V ~\vert~ y^{n+1}(v) = \cdots = y^m(v) = 0 \}.
+= \Set{ v \in V | y^{n+1}(v) = \cdots = y^m(v) = 0 }.
 $$
 Since $n \in N$, the domain, we have that
 $(V \cap N, y^1, \dots, y^n)$ is a coordinate chart in $N$'s induced
@@ -322,7 +321,7 @@ $\tilde{F}(n) = F(n)$ respectively. Then
 $y^i \circ F : U \to \mathbb{R}$ are smooth maps on $U$. Note that
 $$
   S \cap V
-= \{ v \in V ~\vert~ y^{s+1}(v) = \cdots = y^m(v) = 0 \},
+= \Set{ v \in V | y^{s+1}(v) = \cdots = y^m(v) = 0 },
 $$
 so let $(S \cap V, y^1, \dots, y^s)$ be coordinates on $S$ near
 $F(n)$. Then $y^i \circ F = y^i \circ \tilde{F} : U \to \mathbb{R}$ is

@@ -457,13 +457,13 @@ then $T_g \mathrm{GL}_n(\mathbb{R}) = T_g \mathbb{R}^{n \times n}$.
 Writing tangent vectors in terms of a basis for the tangent space gives
 $$
 \sum
-  \beta^i_j \frac{\partial}{\partial a^1_j}
+  \beta^i_j \frac{\partial}{\partial a^i_j}
 $$
 and so we have a map
 $T_g \mathbb{R}^{n \times n} \to \mathbb{R}^{n \times n}$ given by
 $$
 \sum
-  \beta^i_j \frac{\partial}{\partial a^1_j}
+  \beta^i_j \frac{\partial}{\partial a^i_j}
 \mapsto
   \beta^i_j.
 $$
@@ -476,7 +476,7 @@ $(L_g)_{\ast, \id} : T_I \mathrm{GL}_n(\mathbb{R}) \to T_g \mathrm{GL}_n(\mathbb
 Let $X \in T_I \mathrm{GL}_n(\mathbb{R}) = \mathbb{R}_{n \times
   n}$. We want a curve
 $c: (-\varepsilon, \varepsilon) \to \mathrm{GL}_n(\mathbb{R})$ with
-$c(0) = \id$ and $c^\prime(0) = X$, so let $c(t) = I \to t X$. For
+$c(0) = \id$ and $c^\prime(0) = X$, so let $c(t) = I + t X$. For
 small $t$ this is invertible since the determinant is continuous. Then
 \begin{align*}
    (L_g)_{\ast, \id}(X)

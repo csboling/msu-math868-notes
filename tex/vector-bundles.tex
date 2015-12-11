@@ -18,7 +18,7 @@ $$
 Let $\pi: E \to B$ and $\tilde{\pi}: \tilde{E} \to \tilde{B}$ be
 smooth surjective maps. Call $E$ the total space and $B$ the base
 space. For a point $b \in B$,
-we write $E_b = \pi^{-1}(b) = \{e \in E ~\vert~ \pi(e) = b\}$ and call
+we write $E_b = \pi^{-1}(b) = \Set{e \in E | \pi(e) = b}$ and call
 this the \emph{fiber} of $\pi$ above $b$.
 
 A map $\phi: E \to \tilde{E}$ is \emph{fiber-preserving} if
@@ -103,8 +103,8 @@ Let $X$ be a set and $\mathscr{B}$ be a collection of
 subsets of $X$ such that $\cup_{B \in \mathscr{B}} B = X$.
 Suppose that for any $B_1, B_2 \in \mathscr{B}$, if $p \in B_1 \cap
 B_2$, $\exists B \in \mathscr{B}$ with $p \in B \subset B_1 \cap B_2$.
-Define $\tau = \{U ~\vert~ U = \cup B_\lambda, B_\lambda \in
-\mathscr{B}\}$.
+Define $\tau = \Set{U | U = \cup B_\lambda, B_\lambda \in
+\mathscr{B}}$.
 Then $\tau$ is a topology on $X$ and $\mathscr{B}$ is a basis for $\tau$.
 \end{prop}
 
@@ -148,7 +148,7 @@ basis of coordinate charts.
 \begin{defn}[Tangent bundle]
 As a set, $TM = \coprod_{p \in M} T_p M$, where $T_p M$ is the vector
 space of point derivations of $C_p^\infty(M)$. We may also write
-$TM = \{(p, v) ~\vert~ p \in M, v \in T_p M \}$. We have a surjective
+$TM = \Set{(p, v) | p \in M, v \in T_p M }$. We have a surjective
 map $\pi: TM \to M$ given by $\pi(p, v) = p$. As an abuse of notation,
 we often see written $v \in TM$, where $\pi(v) = p$ is the
 \emph{footpoint} of $v \in TM$.
@@ -157,7 +157,7 @@ we often see written $v \in TM$, where $\pi(v) = p$ is the
 We can assign a topology to $TM$. Let
 $(U, \phi) = (U, x^1, \dots, x^m)$ be a coordinate chart in $M$, and
 let
-$(u, w) \in T U = \{ (u, w) ~\vert~ u \in U, w \in T_u U = T_u M \}
+$(u, w) \in T U = \Set{ (u, w) | u \in U, w \in T_u U = T_u M }
  = \pi^{-1}(U)$.
 There exist unique $c^i(w)$, for $i = 1, \dots, m$, with
 $w = \sum_i c^i(w) \left.\frac{\partial}{\partial x^i}\right|_U$
@@ -197,8 +197,8 @@ $\phi(V) \subset \phi(U)$ is open, so
 $\phi(V) \times \mathbb{R}^m \subset \phi(U) \times \mathbb{R}^m$ is
 open.
 
-Take $\mathscr{B} = \{ A ~\vert~ A \text{ open in $TU$ for some chart
-  $(U , \phi)$} \}$. Let $(p, v) \in TM$.
+Take $\mathscr{B} = \Set{ A | A \text{ open in $TU$ for some chart
+  $(U , \phi)$} }$. Let $(p, v) \in TM$.
 Then there exists a chart $U$ in $M$ about $p$, so $(p, v) \in TU$.
 Let $A, B \in \mathscr{B}$. Then $A \subset TU$ for some chart $U$
 and $B \subset TV$ for some chart $V$.

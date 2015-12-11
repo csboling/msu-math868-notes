@@ -264,7 +264,7 @@ Let $V$ be an $n$-dimensional $\mathbb{R}$-vector space. Let
 $X$ be the collection of all ordered bases,
 $$
   X
-= \{ u = \{ u_1, \dots, u_n \} ~\vert~ \text{$u$ is an ordered basis} \}.
+= \Set{ u = \{ u_1, \dots, u_n \} | \text{$u$ is an ordered basis} }.
 $$
 Let $u, v \in X$, with $u = \{u_1, \dots, u_n\}$ and
 $v = \{v_1, \dots, v_n\}$. Then there exist unique scalars $a^i_j$
@@ -923,9 +923,9 @@ A manifold with boundary is modeled locally by the closed upper
 half-space
 $$
   \mathcal{H}^n
-= \{ x = (x^i) \in \mathbb{R}^n ~\vert~
-     x^n \geq 0 \
-  \}
+= \Set{ x = (x^i) \in \mathbb{R}^n
+  |     x^n \geq 0 \
+  }
 $$
 which is given the subspace topology in $\mathbb{R}^n$.
 The interior of $\mathcal{H}^n$ consists of those points whose last
@@ -939,7 +939,7 @@ $\mathrm{int}(\mathcal{H}^n)$ and half-closed half-balls lying on
 $\partial \mathcal{H}^n$.
 
 For $n = 1$, we see that
-$\mathcal{L}^1 = \{ x ~\vert~ x \leq 0 \}$ has an
+$\mathcal{L}^1 = \Set{ x | x \leq 0 }$ has an
 orientation-reversing homeomorphism with $\mathcal{H}^1$
 given by $x \mapsto -x$. There is no orientation-preserving
 homeomorphism $\mathcal{H}^1 \to \mathcal{L}^1$. For
@@ -975,7 +975,7 @@ space $M$ that is
     }
     \item{
       The closed unit ball
-      $\bar{\mathbb{D}}^n = \{ x \in \mathbb{R}^n ~\vert~ \|x\| \leq 1 \}$.
+      $\bar{\mathbb{D}}^n = \Set{ x \in \mathbb{R}^n | \|x\| \leq 1 }$.
     }
   \end{enumerate}
 \end{xmpl}
@@ -1075,10 +1075,10 @@ $\mathbb{R}^n$, so $\psi(p) \in \mathrm{int} \mathcal{H}^n$.
 The \emph{boundary} of a manifold with boundary $M$ is the set
 $$
   \partial M
-= \{ p \in M ~\vert~
+= \Set{ p \in M |
      \exists (U, \phi)
        \text{ about $p$ s.t. $\phi(p) \in \partial \mathcal{H}^n$}
-  \}.
+  }.
 $$
 \end{defn}
 
@@ -1093,8 +1093,8 @@ $n-1$ manifold without boundary.
       subspace topology.
     }
     \item{
-      Let $\mathcal{A} = \{(U_\alpha, \phi_\alpha) ~\vert~ \alpha \in
-      A\}$ be a smooth atlas for $M$. For any $\alpha$, we have
+      Let $\mathcal{A} = \Set{(U_\alpha, \phi_\alpha) | \alpha \in
+      A}$ be a smooth atlas for $M$. For any $\alpha$, we have
       $$
         \phi_\alpha\restrict_{U_\alpha \cap \partial M}
       : U_\alpha \cap \partial M \to \partial \mathcal{H}^n
